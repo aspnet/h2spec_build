@@ -1,0 +1,24 @@
+<Project>
+
+  <PropertyGroup>
+    <NuspecFile>h2spec.nuspec</NuspecFile>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <IncludeSource>false</IncludeSource>
+    <IncludeSymbols>false</IncludeSymbols>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+  </PropertyGroup>
+
+  <!-- This project doesn't actually need this library. 
+       But `dotnet pack` fails without at leats one dependency.
+       So we're adding this "dummy" dependency -->
+   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
+  </ItemGroup>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+  <!-- This project doesn't actually compile anything. It's a shim into packing a nuspec -->
+  <Target Name="Compile" />
+  <Target Name="CopyFilesToOutputDirectory" />
+
+</Project>

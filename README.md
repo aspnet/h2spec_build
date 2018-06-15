@@ -1,12 +1,14 @@
 # What?
 
-This repo builds h2spec in a Docker. Builds Linux/Darwin/Windows binaries in one go! (Thanks to `GOOS` variable.)
+This repo builds h2spec in Docker. Builds Linux/Darwin/Windows binaries in one go! (Thanks to `GOOS` variable.)
 
-Built files appear in `./out/release` directory.
+- Built binaries appear in `./out/release` directory.
+- Built nupgk file appear in `./bin/Debug` directory
 
 # Requirements
 
-- Docker
+- Docker (For creating the binaries)
+- Dotnet SDK 2.x (For packing the nuget file)
 
 # How to build
 
@@ -17,4 +19,3 @@ Built files appear in `./out/release` directory.
 ## Windows
 
 `build.cmd`
-
