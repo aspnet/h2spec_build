@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
   <metadata minClientVersion="3.3.0">
-    <id>AspNetCore.Testing.H2Spec.All</id>
-    <version>2.1.0</version>
+    <id>Microsoft.Internal.AspNetCore.H2Spec.All</id>
+    <version>2.1.1</version>
     <authors>Microsoft ASP.NET Core</authors>
     <owners>Microsoft ASP.NET Core</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
