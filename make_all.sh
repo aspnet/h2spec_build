@@ -5,7 +5,7 @@ git clone https://github.com/summerwind/h2spec ./src/github.com/summerwind/h2spe
 cd $GOPATH/src/github.com/summerwind/h2spec 
 
 ## (currently) latest commit!
-git checkout d99d17171179c709cf23a3df1aadc9657addf825
+git checkout 5de785c2f63d39695b8d933e0fde4698eb422fba
 
 ## install dependencies
 go get github.com/Masterminds/glide
