@@ -4,12 +4,18 @@
 git clone https://github.com/summerwind/h2spec ./src/github.com/summerwind/h2spec
 cd $GOPATH/src/github.com/summerwind/h2spec 
 
-## (currently) latest commit!
-git checkout 5de785c2f63d39695b8d933e0fde4698eb422fba
+# If we need a particular commit hash...
+# git checkout 5de785c2f63d39695b8d933e0fde4698eb422fba
+git checkout d7efa68f9617edaf0ddea15bb8814d515b6531b9
+
 
 ## install dependencies
-go get github.com/Masterminds/glide
-glide install
+#go get github.com/Masterminds/glide
+#glide install
+
+## New build step...
+curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+make build
 
 mkdir /release 
 

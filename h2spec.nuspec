@@ -2,7 +2,7 @@
 <package>
   <metadata minClientVersion="3.3.0">
     <id>Microsoft.Internal.AspNetCore.H2Spec.All</id>
-    <version>2.1.1</version>
+    <version>2.2.1</version>
     <authors>Microsoft ASP.NET Core</authors>
     <owners>Microsoft ASP.NET Core</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
